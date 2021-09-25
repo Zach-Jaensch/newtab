@@ -2,7 +2,6 @@ import React from 'react'
 import WeatherIcon from 'components/WeatherIcon'
 import styled from 'styled-components'
 import theme from 'components/theme'
-import capitalize from 'capitalize'
 
 const Display = styled.div`
   display: flex;
