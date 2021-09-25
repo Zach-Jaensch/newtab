@@ -8,13 +8,13 @@ const Display = styled.div`
   display: flex;
   flex-direction: row;
   margin: ${theme.gutter};
+  align-content: center;
 `
 
 const Icon = styled.span`
   display: flex;
-  font-size: 3rem;
   margin: ${theme.gutter};
-  padding-top: 0.5rem;
+  height: 3rem;
 `
 
 const Text = styled.span`
@@ -48,7 +48,7 @@ export default function LargeWeather({ description, iconId, temp }) {
           {Math.round(temp)} &#8451;
         </Large>
         <Small>
-          {capitalize(description)}
+          {description}
         </Small>
       </Text>
     </Display>

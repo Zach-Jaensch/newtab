@@ -1,6 +1,12 @@
 import React from 'react'
-import WeatherIcon from 'react-icons-weather'
+import styled from 'styled-components'
+
+const Image = styled.img`
+  display: flex;
+  height: 100%;
+  width: auto;
+`
 
 export default function WeatherIconDisplay({iconId}) {
-  return <WeatherIcon name="darksky" iconId={String(iconId)}/>
+  return <Image height="50" width="50" src={`http://openweathermap.org/img/wn/${iconId}@2x.png`} alt="" />
 }

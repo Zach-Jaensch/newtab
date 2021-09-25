@@ -3,17 +3,16 @@ import LargeWeather from 'components/LargeWeather'
 import { useWeather } from 'contexts/Weather'
 
 export default function CurrentWeather() {
-
   const weather = useWeather()
 
   if(weather.loading) return null
 
-  const { currently: { temperature, icon, summary } } = weather
+  const { currently: { temperature, iconId, description } } = weather
 
   return (
     <LargeWeather
-      description={summary}
-      iconId={icon}
+      description={description}
+      iconId={iconId}
       temp={temperature}
     />
   )
