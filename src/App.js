@@ -30,7 +30,7 @@ function App() {
       <WeatherProvider>
         <CurrentWeather/>
         <Footer>
-          <Link href="https://github.com/ZachJaensch">GitHub</Link>
+          <Link href="https://github.com/Zach-Jaensch">GitHub</Link>
           <Link href="https://facebook.com/ZachJaensch">facebook</Link>
         </Footer>
       </WeatherProvider>
